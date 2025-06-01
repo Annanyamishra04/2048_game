@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  #game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+  
+  #score {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2ab3d5;
+  }
+  
+  #board {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background: #34495e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  
+  .tile {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    color: #ffffff;
+  }
+  
+  .tile:empty {
+    background-color: #eee4da;
+  }
+  
+  .tile[value="2"] { background: #eee4da; }
+  .tile[value="4"] { background: #ede0c8; }
+  .tile[value="8"] { background: #f2b179; color: #f9f6f2; }
+  .tile[value="16"] { background: #f59563; color: #f9f6f2; }
+  .tile[value="32"] { background: #f67c5f; color: #f9f6f2; }
+  .tile[value="64"] { background: #f65e3b; color: #f9f6f2; }
+  .tile[value="128"] { background: #edcf72; color: #f9f6f2; }
+  .tile[value="256"] { background: #edcc61; color: #f9f6f2; }
+  .tile[value="512"] { background: #edc850; color: #f9f6f2; }
+  .tile[value="1024"] { background: #edc53f; color: #f9f6f2; }
+  .tile[value="2048"] { background: #edc22e; color: #f9f6f2; }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+ 
+  button:hover {
+    background-color: #6b4f3b;
+  }
+  
